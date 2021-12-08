@@ -18,7 +18,7 @@ header {
       background-color: var(--background-tertiary);
       border-radius: var(--border-radius);
       overflow: hidden;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 0 8px rgb(255, 255, 255);
       animation: top 800ms;
 
       @keyframes top { 0% { margin-top: 200px; opacity: 0;} 100% { margin-top: 0; opacity: 1;}}
