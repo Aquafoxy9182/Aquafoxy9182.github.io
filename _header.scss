@@ -15,7 +15,7 @@ header {
       position: absolute; display: flex;
       flex-direction: column;
       top: 50px; width: 400px; z-index: -1;
-      background-color: rgb(255, 255, 255);
+      background-color: var(--background-tertiary);
       border-radius: var(--border-radius);
       overflow: hidden;
       box-shadow: 0 0 8px rgb(255, 255, 255);
