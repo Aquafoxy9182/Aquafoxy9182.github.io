@@ -105,4 +105,15 @@ h6{
     margin-bottom: 20px;
 }
 
+textarea{
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: aliceblue;
+    width: 445px;
+    border-style: solid;
+    resize: none;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
 
