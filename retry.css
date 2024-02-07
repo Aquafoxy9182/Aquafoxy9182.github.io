@@ -1,5 +1,6 @@
-body{
-    background-image: url(stuff/background.jpg);
+body {
+    background-image: url(stuff/images/pink-cute-background-brbhbik5hue0tg3e.jpg);
+    
 }
 
 html{
@@ -85,15 +86,17 @@ h6{
     flex-direction: column;
 }
 
-.activity{
+.activity {
     position: relative;
     width: 90%;
     max-width: 450px;
     height: auto;
     left: 5%;
     border-radius: 10px;
-    background-color: pink;
-    margin-bottom: 20px; 
+    background-image: url(stuff/images/sparkles-stars.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
     display: flex;
 }
 
