@@ -1,63 +1,67 @@
+/* Body and HTML */
 body {
-    background-image: url(stuff/images/pink-cute-background-brbhbik5hue0tg3e.jpg);
-    
+    background-image: url(stuff/images/11-9_HK_1500x2000_A.webp);
+    background-size: 1000px;
+    margin: 0;
 }
 
-html{
+html {
     overflow-y: auto;
     height: 200%;
 }
 
-::-webkit-scrollbar{
+/* Hide scrollbar */
+::-webkit-scrollbar {
     display: none;
 }
 
-p{
+/* Fonts and Text */
+p, h1, h2, h3, h4, h5, h6 {
     font-family: 'Press Start 2P', system-ui;
     color: lavenderblush;
 }
 
-h1 ,h2, h3,h4, h5, h6{
-    font-family: 'Press Start 2P', system-ui;
-    color: lavenderblush;
-}
-
-h6{
+h6 {
     margin-left: 20px;
 }
 
+/* Popup Styles */
 #popup {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    width: 50%; 
+    width: 50%;
     max-width: 400px;
     z-index: -1;
-    border-width: 2px;
-    border-style: solid;
+    border: 2px solid aliceblue;
     background-color: #241823;
-    border-color: aliceblue;
     border-radius: 10px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
+/* Top Image */
 .topImg{
     width: 100%;
     height: 13%;
+    max-width: 400;
     min-height: 140px;
-    background-position: center;
+    position: relative;
+    flex-direction: column;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-image: url(https://i.pinimg.com/originals/0e/1f/a9/0e1fa97eb8698a325ecded00dcb1c9fe.gif);
+    display: flex;
+    background-image: url(stuff/images/Not7.gif);
 }
 
-.profilePic{
-    border-style: solid;
+
+/* Profile Picture */
+.profilePic {
+    border: 2px solid aliceblue;
     border-radius: 50%;
+    min-width: 50px;
     color: aliceblue;
     width: 15%;
     position: relative;
@@ -65,7 +69,8 @@ h6{
     margin-left: 15px;
 }
 
-.name{
+/* Name */
+.name {
     position: sticky;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -73,19 +78,7 @@ h6{
     color: lavenderblush;
 }
 
-.pp{
-    width: 50%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    max-width: 10px;
-    z-index: +1;
-    position: unset;
-    float: unset;
-    margin-left: 30px;   
-    display: flex;
-    flex-direction: column;
-}
-
+/* Activity */
 .activity {
     position: relative;
     width: 90%;
@@ -100,13 +93,14 @@ h6{
     display: flex;
 }
 
-#discordBar{
+/* Discord Bar */
+#discordBar {
     width: 100%;
 }
 
-.aboutMe{
-    border-style: solid;
-    border-color: aliceblue;
+/* About Me Section */
+.aboutMe {
+    border: 2px solid aliceblue;
     position: relative;
     width: 90%;
     left: 5%;
@@ -114,26 +108,33 @@ h6{
     margin-bottom: 20px;
 }
 
-textarea{
+/* Textarea */
+textarea {
+    border: 3px solid aliceblue;
     border-radius: 10px;
-    border-width: 3px;
-    border-color: aliceblue;
     width: 90%;
     max-width: 350px;
-    border-style: solid;
     resize: none;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 20px;
 }
 
-.tableOne{
+/* Table */
+.tableOne {
     width: 100%;
     max-width: 400px;
 }
 
-.insta{
-    position: relative;
-    margin-right: 200px;
+.discord{
+    margin-left: 10px;
 }
+
+/* Instagram */
+.insta {
+    position: relative;
+    margin-right: 200px; /* Adjust as needed */
+}
+
+
 
