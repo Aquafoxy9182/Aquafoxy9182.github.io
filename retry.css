@@ -1,8 +1,7 @@
 /* Body and HTML */
 body {
     background-image: url(stuff/images/11-9_HK_1500x2000_A.webp);
-    background-size: 1000px;
-    margin: 0;
+    background-size: cover;
 }
 
 html {
@@ -14,6 +13,8 @@ html {
 ::-webkit-scrollbar {
     display: none;
 }
+
+
 
 /* Fonts and Text */
 p, h1, h2, h3, h4, h5, h6 {
@@ -120,21 +121,22 @@ textarea {
     margin-bottom: 20px;
 }
 
-/* Table */
-.tableOne {
-    width: 100%;
-    max-width: 400px;
+
+.socials-container {
+    display: flex;
+    justify-content: space-around; /* Dit verdeelt de ruimte gelijk tussen de items */
+    align-items: center; /* Dit centreert de items verticaal */
 }
 
-.discord{
-    margin-left: 10px;
-}
 
-/* Instagram */
-.insta {
-    position: relative;
-    margin-right: 200px; /* Adjust as needed */
-}
 
+
+.discord, .insta, .spotify {
+    /* Voorbeeld van gemeenschappelijke stijlen */
+    width: 50px; /* Of een andere maat */
+    height: 50px; /* Of een andere maat */
+    text-align: center;
+    line-height: 50px; /* Voor verticale tekst centrering als de iconen tekst bevatten */
+}
 
 
