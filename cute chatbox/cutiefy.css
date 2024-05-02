@@ -11,7 +11,7 @@ body{
 
 #popup{
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
@@ -21,6 +21,13 @@ body{
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+ 
+@media screen and (max-width: 600px) {
+    #popup {
+        width: 90%;
+    }
 }
 
 #start_title{
@@ -35,27 +42,45 @@ body{
 }
 
 
-#User,#Pasword{
+#User,#Password{
     border: 3px solid #e8b3ff;
     border-radius: 10px;
-    margin-left: 25%;
+    margin: 0 auto;
     font-size: 20px;
     font-family: 'penus';
-
+    font-size: large;
     width: 50%;
-    height: 20px;
+    height: 25px;
     resize: none;
     text-align: center;
 }
+
 
 #UserPas{
     text-align: center;
     font-size: 20px;
 }
 
-#Pasword{
+#Password{
     margin-bottom: 25px;
 }
+
+#loginButton{
+    margin: 0 auto; /* Center horizontally */
+    width: 25%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: #e8b3ff;
+    border-style: solid;
+    font-family: 'penus';
+    font-size: large;
+}
+
+#loginButton:active{
+    border-color: #9467a7;
+}
+
 /* ============================cloud on the bootem left animations start ============================*/
 @keyframes CloudsLeft {
     0%   {left: -100%;}
@@ -240,6 +265,175 @@ body{
     height: 10%; 
     position: fixed; 
     bottom:10%;
+    width:13%; 
+    right: -2%;
+    z-index: -1;
+    background-color: hsl(282, 31%, 60%); 
+    border-radius: 100px;
+}
+/* ============================cloud on the bootem right end ============================*/
+
+/* ============================cloud on the top left start============================ */
+#baseCloudTop{
+    width: 25%;
+    height: 100px;
+    position: fixed;
+    animation-name: CloudsLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    left: -5%;
+    top:-3%;
+    height: 10%;
+    border-radius: 100px;
+    background-color: hsl(283, 48%, 71%); 
+}
+
+#baseCloudTopTop1{
+    animation-name: CloudsLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 10%; 
+    position: fixed; 
+    top:4%;
+    width:20%; 
+    left: -5%;
+    background-color: hsl(283, 48%, 71%); 
+    border-radius: 100px;
+}
+
+#baseCloudTopTop2{
+    animation-name: CloudsLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 10%; 
+    position: fixed; 
+    top:9%;
+    width:11%; 
+    z-index: 10;
+    left: -2%;
+    background-color: hsl(283, 48%, 71%); 
+    border-radius: 100px;
+}
+
+#baseCloudBackTop{
+    animation-name: CloudsLeftBack;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 10%; 
+    position: fixed; 
+    top:-2%;
+    width:25%; 
+    left: -3%;
+    z-index: -1;
+    background-color: hsl(282, 31%, 60%); 
+    border-radius: 100px;
+}
+
+#baseCloudTopBackTop1{
+    animation-name: CloudsLeftBack;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 10%; 
+    position: fixed; 
+    top:5%;
+    width:20%; 
+    z-index: -1;
+    background-color: hsl(282, 31%, 60%); 
+    border-radius: 100px;
+}
+
+#baseCloudTopBackTop2{
+    animation-name: CloudsLeftBack;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 10%; 
+    position: fixed; 
+    top:10%;
+    width:13%; 
+    left: -2%;
+    z-index: -1;
+    background-color: hsl(282, 31%, 60%); 
+    border-radius: 100px;
+}
+/* ============================cloud on the bootem left end============================ */
+
+/*============================ cloud on the bootem right start ============================*/
+#baseCloudRightTop{
+    animation-name: CloudsRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 10%; 
+    position: fixed; 
+    top:-3%;
+    width:25%; 
+    right: -5%;
+    background-color: hsl(283, 48%, 71%); 
+    border-radius: 100px;
+}
+
+
+#baseCloudTopRightTop1{
+    animation-name: CloudsRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 10%; 
+    position: fixed; 
+    top:4%;
+    width:20%; 
+    right: -5%;
+    background-color: hsl(283, 48%, 71%); 
+    border-radius: 100px;
+}
+
+#baseCloudTopRightTop2{
+    animation-name: CloudsRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 10%; 
+    position: fixed; 
+    top:9%;
+    width:11%; 
+    z-index: 10;
+    right: -2%;
+    background-color: hsl(283, 48%, 71%); 
+    border-radius: 100px;
+}
+
+#baseCloudBackRightTop{
+    animation-name: CloudsRightBack;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 10%; 
+    position: fixed; 
+    top:-2%;
+    width:25%; 
+    right: -3%;
+    z-index: -1;
+    background-color: hsl(282, 31%, 60%); 
+    border-radius: 100px;
+}
+
+#baseCloudTopBackRightTop1{
+    animation-name: CloudsRightBack;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 10%; 
+    position: fixed; 
+    top:5%;
+    width:20%; 
+    right: -2%;
+    z-index: -1;
+    background-color: hsl(282, 31%, 60%); 
+    border-radius: 100px;
+}
+
+#baseCloudTopBackRightTop2{
+    animation-name: CloudsRightBack;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 10%; 
+    position: fixed; 
+    top:10%;
     width:13%; 
     right: -2%;
     z-index: -1;
