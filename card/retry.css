@@ -1,6 +1,6 @@
 /* Body and HTML */
 body {
-    background-image: url(stuff/images/11-9_HK_1500x2000_A.webp);
+    background-image: url(../stuff/images/11-9_HK_1500x2000_A.webp);
     background-size: cover;
 }
 
@@ -54,7 +54,7 @@ h6 {
     background-position: bottom;
     background-repeat: no-repeat;
     display: flex;
-    background-image: url(stuff/images/Not7.gif);
+    background-image: url(../stuff/images/Not7.gif);
 }
 
 
@@ -87,7 +87,7 @@ h6 {
     height: auto;
     left: 5%;
     border-radius: 10px;
-    background-image: url(stuff/images/sparkles-stars.gif);
+    background-image: url(../stuff/images/sparkles-stars.gif);
     background-size: 100%;
     background-repeat: no-repeat;
     margin-bottom: 20px;
