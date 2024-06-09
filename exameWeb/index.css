@@ -15,17 +15,35 @@ p{
 
 /* gradiant */
 
-#gradiant{
+#gradiant {
     border-style: solid;
     height: 50px;
-    background-image: linear-gradient(to right, aqua,white);
+    background-image: linear-gradient(to right, aqua, white);
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
 }
+
+#gradiantcode {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms;
+}
+
+#gradiant:hover + #gradiantcode {
+    transition: max-height 500ms; 
+    max-height: 200px;
+}
+
 
 /* list */
 
 #list{
     border-style: solid;
     height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
 
 ul :nth-child(1){
@@ -36,15 +54,34 @@ ul :nth-child(2){
     list-style: none;
 }
 
+#listcode{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 500ms;
+}
+
+#list:hover + #listcode{
+    transition: max-height 500ms;
+    max-height: 300px;
+}
+
 /* Tekst en typografie */
 
 #tekst{
     border-style: solid;
-    height: fit-content;
+    height: 100px;
     font-family: "Tiny5", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: start;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+#tekst > a{
+    align-self: flex-end;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #tekst :nth-child(1){
@@ -53,6 +90,17 @@ ul :nth-child(2){
 
 #tekst :nth-child(2){
     font-size: 100%;
+}
+
+#tekstcode{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 500ms;
+}
+
+#tekst:hover + #tekstcode{
+    max-height: 300px;
+    transition: max-height 500ms;
 }
 
 /* selectors */
@@ -70,10 +118,17 @@ ul :nth-child(2){
     display: flex;
     position: relative;
     overflow: hidden;
+    align-items: flex-end;
 }
 
-#boxmodelen:hover{
+#boxmodelen > a{
+    margin-left: auto;
+}
+
+#boxmodelen:hover + #boxmodelcode{
     cursor: crosshair;
+    max-height: 1000px;
+    transition: max-height 500ms;
 }
 
 #redbox{
@@ -108,6 +163,12 @@ ul :nth-child(2){
     border-style: dashed;
     border-radius: 10px;
     box-shadow: 0px 10px 10px rgba(83, 15, 194, 0.5);
+}
+
+#boxmodelcode{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms;
 }
 
 /* flexbox */
@@ -151,6 +212,12 @@ ul :nth-child(2){
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+}
+
+#flexbox > a {
+    position: relative;
+    align-self: flex-end;
+    margin-left: auto;
 }
 
 #statictekst{
