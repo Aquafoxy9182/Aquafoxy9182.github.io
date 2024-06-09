@@ -15,7 +15,12 @@
     </div>
 
     <h3>gradiant</h3>
-    <div id="gradiant"></div>
+    <div id="gradiant">
+        <a>hover to show code</a>
+    </div>
+    <div id="gradiantcode">
+        #gradiant{<br>border-style: solid;<br>height: 50px;<br>background-image: linear-gradient(to right, aqua,white);<br>}
+    </div>
 
     <h3>list</h3>
     <div id="list">
@@ -25,13 +30,17 @@
             <li>3</li>
             <li>4</li>
         </ul>
+        <a>hover to show code</a>
     </div>
+    <div id="listcode">#list{<br>border-style: solid;<br>height: fit-content;<br>}<br><br>ul :nth-child(1){<br>list-style: lower-roman;<br>}<br><br>ul :nth-child(2){<br>list-style: none;<br>}</div>
 
     <h3>Tekst en typografie</h3>
     <div id="tekst">
         <p>dit is absolute groote</p>
         <p>dit is relative groote</p>
+        <a>hover to show code</a>
     </div>
+    <div id="tekstcode">#tekst{<br>border-style: solid;<br>height: 100px;<br>font-family: "Tiny5", sans-serif;<br>font-weight: 400;<br>font-style: normal;<br>text-align: start;<br>}<br><br>#tekst :nth-child(1){<br>font-size: 15px;<br>}<br><br>#tekst :nth-child(2){<br>font-size: 100%;<br>}</div>
 
     <h3>selectors</h3>
     <div id="selectors">
@@ -45,7 +54,9 @@
         <div id="redbox"></div>
         <div id="bluebox"></div>
         <div id="greenbox"></div>
+        <a>hover to show code</a>
     </div>
+    <div id="boxmodelcode">#boxmodelen{<br>border-style: solid;<br>height: fit-content;<br>display: flex;<br>position: relative;<br>overflow: hidden;<br>}<br><br>#boxmodelen:hover{<br>cursor: crosshair;<br>}<br><br>#redbox{<br>height: 20px;<br>width: 20px;<br>background-color: red;<br>margin: 10px;<br>border-color: blue;<br>border-style: dashed;<br>border-radius: 10px;<br>box-shadow: 0px 10px 10px rgba(83, 15, 194, 0.5);<br>}<br><br>#bluebox{<br>height: 20px;<br>width: 20px;<br>background-color: blue;<br>margin: 10px;<br>border-color: red;<br>border-style: dashed;<br>border-radius: 10px;<br>box-shadow: 0px 10px 10px rgba(83, 15, 194, 0.5);<br>}<br><br>#greenbox{<br>height: 20px;<br>width: 20px;<br>background-color: green;<br>visibility: hidden;<br>margin: 10px;<br>border-color: white;<br>border-style: dashed;<br>border-radius: 10px;<br>box-shadow: 0px 10px 10px rgba(83, 15, 194, 0.5);<br>}<br></div>
 
     <h3>flexbox float</h3>
     <div id="flexbox">
@@ -61,7 +72,9 @@
             <div id="blueboxflex2"></div>
             <div id="greenboxflex2"></div>     
         </div>
+        <a>hover to show code</a>
     </div>
+    <div>#flex{<br>display: flex;<br>flex-wrap: wrap;<br>align-content: center;<br>}<br><br>#flexbox > a {<br>position: relative;<br>align-self: flex-end;<br>margin-left: auto;<br>}<br><br>#statictekst{<br>margin: 0;<br>margin-left: 7px;<br>}<br><br>#redboxflex2{<br>height: 50px;<br>width: 50px;<br>background-color: red;<br>}<br><br>#blueboxflex2{<br>height: 50px;<br>width: 50px;<br>background-color: blue;<br>}<br><br>#greenboxflex2{<br>height: 50px;<br>width: 50px;<br>background-color: green;<br>}<br></div>
 
     <h3>responsive desine</h3>
     <div>
