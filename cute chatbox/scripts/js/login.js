@@ -1,6 +1,7 @@
 function login() {
     var usernameCorrect = "aqua";
     var passwordCorrect = "pp";
+    var incorect = 0;
 
     var usernameInput = document.getElementById("User").value;
     var passwordInput = document.getElementById("Password").value;
@@ -14,7 +15,7 @@ function login() {
         document.getElementById("Password").value = "";
         User.classList.add("UserPasswordAnimate");
         Password.classList.add("UserPasswordAnimate");
-
+        
         // < van het internet >
         User.classList.remove('UserPasswordAnimate');
         void User.offsetWidth;  // This forces reflow
@@ -24,6 +25,10 @@ function login() {
         void Password.offsetWidth;  // This forces reflow
         Password.classList.add('UserPasswordAnimate');
         // < /van het inernet >
-
+        incorect = 1 
+        setTimeout(function() {
+            alert("incorect :(");
+        }, 100);
+            
     }
 }
