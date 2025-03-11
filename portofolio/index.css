@@ -1,5 +1,26 @@
-body{
+body {
     background-color: #e6e6fa;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p a {
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #6c757d;
 }
 
 #centerDiv {
@@ -7,12 +28,12 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 25%;
     height: 50%;
     border-style: solid;
     border-radius: 3em;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #fff;  
 }
 
 #portofolioOnBoc{
@@ -24,10 +45,42 @@ body{
 }
 
 #basicInfo{
+    display: flex;
+    align-items: center;
+    padding: 0% 5% 0% 5%;
     margin-bottom: 5%;
     height: 40%;
     border-top-left-radius: 3em;
     border-top-right-radius: 3em;
     overflow: hidden;
     border-bottom-style: solid;
+    margin: 0%;
+}
+
+#basicInfo h2{
+    padding-bottom: 0.5em;;
+}
+
+#basicInfo img{
+        margin-left: auto;
+        border-radius: 50%;
+        width: 10em;
+        height: 10em;
+}
+
+#project_button {
+    display: flex;
+    margin: 0%;;
+    height: 60%;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+#project_button input{
+    border-radius: 3em;
+    width: 20em;
+    height: 2.5em;
+    margin-bottom: 5px;
 }
